@@ -12,6 +12,12 @@
 <!-- To regenerate prisma client delete the `.prisma` folder inside your node_modules directory -->
 
 
+Best Practices for Setting `NEXTAUTH_SECRET`
+- Generate a Strong Secret by running this command on Git Bash terminal:
+```bash
+openssl rand -base64 32
+```
+
 console.firebase.google.com -> signin
 - make a project
 - Add firebase to your web
