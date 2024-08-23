@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+1. npm install next-auth
+2. npm install swr
+3. npm install firebase
+4. npm install react-quill quill                   <!-- for text editing  -->
+5. npm install @prisma/client @auth/prisma-adapter
+6. npm install prisma --save-dev
+7. npx prisma init --datasource-provider mongodb   <!-- creates prisma folder with schema -->
+8. npx prisma generate                             <!-- generate prisma client  -->
+9. npx prisma studio                               <!-- (http://localhost:5555) -->
+10. npm install mongodb      <!-- uninstalled, because I am using mongodb database through Prisma ORM -->
+11. npx prisma cache clear
+<!-- To regenerate prisma client delete the `.prisma` folder inside your node_modules directory -->
 
-## Getting Started
 
-First, run the development server:
+console.firebase.google.com -> signin
+- make a project
+- Add firebase to your web
+- Go to build -> storage -> test mode
+- paste the given code in `firebase.js`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+mongodb_url:
+- cloud.mongodb.com -> signin
+- make sure user name is correct in mongodb datbase url.
+- replace `<password>` with actual password.
+- explicitly add database name after `mongodb.net/`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To add Blogs:
+- delete previous `.prisma` file node modules.
+- run `npx prisma generate` and `npx prisma studio`
+- visit the given url for adding / editing.
