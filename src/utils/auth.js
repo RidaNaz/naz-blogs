@@ -11,10 +11,10 @@ export const authOptions = {
       clientId: process.env.GOOGLE_ID || "default-client-id",
       clientSecret: process.env.GOOGLE_SECRET || "default-client-secret"
     }),
-    GithubProvider({
-      clientId: process.env.GITHUB_ID || "default-github-id",
-      clientSecret: process.env.GITHUB_SECRET|| "default-github-secret"
-    }),
+    // GithubProvider({
+    //   clientId: process.env.GITHUB_ID || "default-github-id",
+    //   clientSecret: process.env.GITHUB_SECRET|| "default-github-secret"
+    // }),
   ],
 };
 
