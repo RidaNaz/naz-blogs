@@ -32,6 +32,10 @@ mongodb_url:
 - replace `<password>` with actual password.
 - explicitly add database name after `mongodb.net/`
 
+Add this line on script section on `package.json`:
+```json
+"postinstall": "prisma generate"
+```
 
 To add Blogs:
 - delete previous `.prisma` file node modules.
