@@ -7,8 +7,9 @@
 7. npx prisma init --datasource-provider mongodb   <!-- creates prisma folder with schema -->
 8. npx prisma generate                             <!-- generate prisma client  -->
 9. npx prisma studio                               <!-- (http://localhost:5555) -->
-10. npm install mongodb      <!-- uninstalled, because I am using mongodb database through Prisma ORM -->
+10. npx prisma db push                             <!-- To sync your schema changes with MongoDB -->
 11. npx prisma cache clear
+12. npm install mongodb      <!-- uninstalled, because I am using mongodb database through Prisma ORM -->
 <!-- To regenerate prisma client delete the `.prisma` folder inside your node_modules directory -->
 
 
