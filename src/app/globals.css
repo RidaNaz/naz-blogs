@@ -1,3 +1,5 @@
+@tailwind utilities;
+
 :root {
   --bg: white;
   --textColor: black;

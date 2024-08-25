@@ -6,7 +6,7 @@ import Pagination from "../pagination/Pagination";
 
 const getData = async (page:any, cat:any) => {
   const res = await fetch(
-    `https://naz-blogs.vercel.app/api/posts?page=${page}&cat=${cat || ""}`,
+    `http://localhost:3000/api/posts?page=${page}&cat=${cat || ""}`,
     {
       cache: "no-store",
     }
@@ -29,7 +29,7 @@ const CardList = async ({ page, cat }:any) => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Recent Posts</h1>
+      <h1 className={styles.title} id="recent">Recent Posts</h1>
       <div className={styles.posts}>
         {posts?.map((item:any) => (
           <Card item={item} key={item._id} />

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const getData = async () => {
-  const res = await fetch("https://naz-blogs.vercel.app/api/categories", {
+  const res = await fetch("http://localhost:3000/api/categories", {
     cache: "no-store",
   });
 
@@ -19,7 +19,7 @@ const CategoryList = async () => {
   const data = await getData();
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Popular Categories</h1>
+      <h1 className={styles.title} id="blogs">Popular Categories</h1>
       <div className={styles.categories}>
         {data?.map((item:any) => (
           <Link
