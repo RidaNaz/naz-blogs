@@ -20,6 +20,12 @@ Best Practices for Setting `NEXTAUTH_SECRET`
 openssl rand -base64 32
 ```
 
+Google Credentials
+- Go to `https://console.cloud.google.com/` -> credentials
+
+GitHub Credentials
+- GitHub -> setting -> Developers setting -> O Auth
+
 console.firebase.google.com -> signin
 - make a project
 - Add firebase to your web
