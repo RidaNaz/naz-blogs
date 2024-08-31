@@ -35,7 +35,7 @@ const Footer = () => {
           <Link href="/">Homepage</Link>
           <Link href="#blogs">Blog</Link>
           <Link href="https://ridanaz-portfolio.vercel.app">Portfolio</Link>
-          <Link href="linktree-address">Contact</Link>
+          <Link href="https://linktr.ee/Rida_Naz">Contact</Link>
         </div>
         <div className={styles.list}>
           <span className={styles.listTitle}>Tags</span>
